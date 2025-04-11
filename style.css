@@ -127,12 +127,6 @@ main div:not(.main-content-wrapper) { /* Target the SVG container */
     overflow: auto; /* Add scrollbars if SVG is large */
 }
 
-#restalk {
-    max-width: 100%;
-    max-height: 100%;
-    height: auto; /* Maintain aspect ratio */
-}
-
 /* Popup styling */
 aside.popup {
     max-width: 1170px; /* Match main content width */
