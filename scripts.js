@@ -30744,7 +30744,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     function t() {
         let A = export_link_v1(document.querySelector("#logtext").value);
-        return A;
         window.location.hash = A;
         let t = window.location.href;
         return e ? (document.getElementById("button-share-url").href = t) : (window.location.hash = ""), t;
