@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BPMN Sketch Miner</title>
+    <meta name="description"
+        content="Sketch process models with the BPMN Business Process Modeling Notation as you describe them in simple natural language">
+    <meta name="version" content="1.17.6.3337">
+    <meta name="author" content="Cesare Pautasso, Ana Ivanchikj, Ilija Gjorgjiev">
+    <link id="favicon" rel="shortcut icon" href="./logo-white.png">
+    <link rel="stylesheet" href="style.css?1.17.6">
+
+</head>
+
+<body data-src="">
+    <header>
+        <section>
+            <h1>BPMN Sketch Miner</h1>
+            <nav><a class="active" href="index.html">Sketch</a></nav>
+            <div style="flex:1"></div>
+        </section>
+        <section>
+            <nav><span id="button-option-layout">Layout: <a id="button-option-layout-orientation-vertical" href="#"
+                        title="Vertical">↓</a><a id="button-option-layout-orientation-horizontal" href="#"
+                        title="Horizontal">→</a></span><span id="button-option-layout">Zoom: <a
+                        id="button-option-layout-zoom-none" href="#" title="1:1">1:1</a><a
+                        id="button-option-layout-zoom-fit" href="#" title="Fit">Fit</a></span><span
+                    id="button-share">Share: <a id="button-share-url" href="#">Link</a></span><span
+                    id="button-export">Export: <a id="button-export-svg" href="#">SVG</a><a id="button-export-png"
+                        href="#">PNG</a><a id="button-export-bpmn" href="#">BPMN</a></span></nav>
+        </section>
+    </header>
+    <aside class="popup">
+        <section></section><a class="close" href="#">&times;</a>
+    </aside>
+    <main>
+        <div class="main-content-wrapper"><textarea id="logtext" oninput="live(this.value+'\n',true);"
+                placeholder="What&#39;s your process like today?">
+Welcome to BPMN Sketch Miner:
+
+Draw simple BPMN diagrams
+(timer quickly)
+as you describe them with stories
+
+///Start by writing your list of tasks
+///one on each line...
+</textarea>
+            <div><svg id="restalk" style=""> </svg></div>
+        </div>
+    </main>
+    <div style="display: none">
+        <footer><progress id="progress" style="display: none"></progress>
+            <p id="status" style="display: none"></p>
+        </footer><textarea id="explog"></textarea>
+    </div>
+    <script src="scripts.js?1.17.6"></script>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+﻿@import"./fonts/font.css";html{background:linear-gradient(to bottom, #008d4f, #00745d);min-height:100vh}a:visited{color:#00745d}a{color:#008d4f}body{display:flex;flex-direction:column;justify-content:space-between;align-items:stretch;min-height:96vh;padding:.5em;margin:.5em;background:#fff}main{width:100%;display:flex;flex:1}body.index-list main{height:unset;flex-direction:column}body.index-list main section,section.images{flex-wrap:wrap;flex-direction:row;justify-content:center}body.index-list main img,section.images img{max-height:10em;margin:.5em}body.index-list main img:hover,section.images img:hover{max-height:10em;box-shadow:#000 0 0 2px}body.tutorial nav>a:last-child,body.index-list nav>a:last-child{margin-left:1em}body.tutorial main section a,body.index-list main section a,section.images a{display:inline-flex;flex-direction:column;margin:1em;align-items:center}body.render-done #button-export{opacity:1}#button-export{opacity:0}#button-export{transition:opacity .5s}aside.popup{margin-bottom:1em;display:none;flex-direction:row;padding:1em;background:linear-gradient(to right, #85d9f9 0%, #cbf1ff 100%);position:relative;border-radius:.5em;border-top-right-radius:0;box-shadow:#54a2c0 0 0 5px 0px}#button-done{display:none}body[data-src="tutorial/11/04-challenge-five"] #button-done{display:block}body[data-src="tutorial/11/04-challenge-five"] aside.popup.done #button-next{display:none}body.button-done[data-src="tutorial/11/04-challenge-five"] #msg{display:block}body.button-done[data-src="tutorial/11/04-challenge-five"] aside.popup.done #button-next{display:block}body[data-src="tutorial/11/04-challenge-five"] #msg{display:none}aside.popup.tutorial{background:linear-gradient(to right, #f2f985 0%, #fffdcb 100%);box-shadow:#afc054 0 0 5px 0px}aside.popup.tutorial blockquote{background:#f9f9f9;margin:1em;padding:.5em 1.5em;quotes:""" ""''";position:relative}aside.popup.tutorial blockquote:before{content:open-quote;transform:translate(-0.6em, 0.8em) scale(4);display:inline-block}aside.popup.tutorial blockquote:after{content:close-quote;transform:translate(-0.5em, 1.5em) scale(4);display:inline-block;position:absolute;right:0}aside.popup.tutorial blockquote>*{display:inline-block}aside.popup.tutorial.done{background:linear-gradient(to right, #91f985 0%, #aef889 100%);box-shadow:#47941f 0 0 5px 0px}aside.popup.tutorial section{display:flex;flex-direction:row;flex-wrap:wrap}aside.popup.tutorial section div:first-child{flex:1}aside.popup.tutorial section div:nth-child(2){display:flex;flex-direction:column;justify-content:space-around}aside.popup input{font-size:1.25em;width:20em}aside.popup button{font-size:1.25em;width:10em}aside.popup section{width:99%}aside.popup section p:first-child{margin-top:0}aside.popup section p:last-child{margin-bottom:0}aside.popup code{font-family:"Fira Sans";font-size:1em;background:#ecf456;padding-left:.33em;padding-right:.33em}aside.popup textarea{width:99%;font-family:"Fira Sans";font-size:.9em;background:linear-gradient(to right, #cbf1ff 0%, white 100%);padding:.5em;height:1em;overflow:auto}aside.popup .close{font-size:2em;text-decoration:none;margin-left:.5em;position:absolute;top:0;right:.3em;color:#000}aside.popup .close:hover{font-weight:bold}main textarea{min-width:20vw;width:33vw}main div{flex:1}main svg{min-height:50vh;min-width:50vw;width:100%;height:100%}.bold{font-weight:bold}nav{font-size:1.25em;color:gray}header section:first-child nav a{text-decoration:none;color:#000;margin:.25em}header section:first-child nav a:hover{text-decoration:none;color:#000;padding-top:.7em;padding-bottom:.5em}a:hover{background:#ffefb4}#button-export,#button-share,#button-option-layout{margin-left:1em}nav a.link-tutorial-next{margin-right:1em}nav a.link-example-prev{margin-left:1em}nav a.link-last-tutorial{margin-right:2.5em}nav a.space-right{margin-right:1em}button{font-family:"Fira Sans";font-size:1em}aside.popup.done #button-next{display:block}aside.popup #button-next{display:none}#logtext{font-size:1em;font-family:"Fira Mono"}svg text,body{font-family:"Fira Sans"}input[type=text],textarea,select,option{font-family:"Fira Sans"}text{font-weight:300;font-size:14px;stroke:none}.type-Request text,.type-Data text,.type-Response text{fill:#000}svg text{font-size:1em}header{position:sticky;top:0;background:#fff;margin:0;z-index:10;margin-bottom:1em}header section{display:flex;flex-direction:row;justify-content:flex-end}header h1{flex:1;margin:0;color:#00745d}header h2{flex:1;margin:0;color:#008d4f}header section:first-child nav a.active{background:#ffd400;border-top:1px solid #000;margin:0;padding-top:.75em;padding-bottom:.5em}header section:first-child nav a{padding-left:1em;padding-right:1em}header section:first-child nav a.link-example-prev,header section:first-child nav a.link-tutorial-prev{padding-right:0}header section:first-child nav a.link-tutorial-next,header section:first-child nav a.link-example-next{padding-left:0}header section nav a{text-decoration:none;padding-left:.25em;padding-right:.25em;color:#000}nav a.selected{font-weight:bold;background:#ffd400}nav a{transition-property:background,padding;transition-duration:.5s}div#msg{display:block;margin-top:.5em}.kill{opacity:.5}.node polygon,.node circle{fill:none;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1}.boundary circle:first-child{fill:#fff}.boundary.interrupt>circle{stroke-dasharray:2.5 1.5}.focused{transition:fill .5s,stroke-width .25s}.focused circle{fill:#ffd400}.type-Request.focused{fill:#ffd400;stroke:#000;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1}.type-Data.focused{fill:#ffd400;stroke:#000;stroke-width:2px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1}.type-XOR.focused polygon{fill:#ffd400;stroke-width:2px}.type-XOR.focused path{stroke:#ffefb4;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1}.label.focused{text-shadow:#ffd400 0 0 10px}.type-Response{fill:rgba(164,164,164,.5);stroke:#000;stroke-width:1.11049819px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1}.type-Data{fill:#fff;stroke:#000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1}.type-Request{fill:#ffefb4;stroke:#000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1}.edgePath{stroke:#333;fill:#000;stroke-width:1.5px}.arrowhead{stroke:#000;fill:#000;stroke-width:2px}
+
+/* --- Modern UI Enhancements --- */
+
+/* General body and layout improvements */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font stack */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6; /* Lighter background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    background: none; /* Override initial gradient */
+}
+
+header {
+    background-color: #ffffff; /* White header background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Keep header visible */
+    top: 0;
+    z-index: 1000; /* Ensure header is on top */
+    margin: 0;
+    padding: 0 1em; /* Add padding */
+    margin-bottom: 0; /* Remove default margin-bottom */
+}
+
+header section {
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
+    padding: 0.5em 0;
+    align-items: center;
+}
+
+header h1 {
+    color: #00745d; /* Use existing theme color */
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Navigation styling */
+header nav a {
+    text-decoration: none;
+    color: #555;
+    padding: 0.5em 1em;
+    margin: 0 0.25em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover,
+header nav a:focus {
+    background-color: #e8f3f0; /* Light green hover */
+    color: #00745d;
+}
+
+header nav a.active {
+    background-color: #00745d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header section:last-child nav span { /* Style the layout/zoom/share/export buttons */
+    margin-left: 1.5em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+header section:last-child nav a {
+    color: #00745d; /* Theme color for links */
+    margin: 0 0.2em;
+    padding: 0.2em 0.4em;
+}
+header section:last-child nav a:hover {
+    background-color: #e8f3f0;
+}
+
+
+/* Main content area */
+main {
+    flex: 1; /* Take up remaining vertical space */
+    padding: 1.5em;
+    max-width: 1200px; /* Limit content width */
+    width: 100%;
+    margin: 1em auto; /* Center content and add top margin */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.main-content-wrapper {
+    display: flex;
+    gap: 1.5em; /* Space between textarea and svg */
+    height: 100%; /* Fill main */
+}
+
+/* Textarea styling */
+#logtext {
+    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Monospaced font */
+    font-size: 0.95em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: #ffffff;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    flex-basis: 40%; /* Adjust width ratio */
+    min-width: 300px; /* Minimum width */
+    height: 75vh; /* Defined height */
+    resize: horizontal; /* Allow horizontal resize */
+    overflow-y: auto; /* Add scroll if needed */
+}
+
+/* SVG container styling */
+main div:not(.main-content-wrapper) { /* Target the SVG container */
+    flex: 1; /* Take remaining space */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 1em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    display: flex; /* Center SVG */
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Add scrollbars if SVG is large */
+}
+
+#restalk {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Popup styling */
+aside.popup {
+    max-width: 1170px; /* Match main content width */
+    margin: 1em auto 0; /* Center and add top margin */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+aside.popup .close {
+    color: #555;
+    font-size: 1.5em;
+    top: 0.2em;
+    right: 0.5em;
+}
+
+/* Footer (hidden by default) */
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 1.5em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav {
+        margin-top: 0.5em;
+    }
+    header section:last-child nav {
+        margin-top: 0.5em;
+    }
+    main {
+        padding: 1em;
+    }
+    .main-content-wrapper {
+        flex-direction: column;
+    }
+    #logtext {
+        height: 40vh; /* Adjust height for smaller screens */
+        flex-basis: auto; /* Reset basis */
+        resize: vertical; /* Allow vertical resize */
+    }
+     main div:not(.main-content-wrapper) {
+        min-height: 40vh; /* Ensure SVG area has height */
+    }
+}
